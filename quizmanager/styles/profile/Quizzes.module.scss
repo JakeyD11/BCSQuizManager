@@ -1,0 +1,55 @@
+.Quizzes {
+    margin-top: 2rem;
+
+    .Header {
+        font-family: 'Lato';
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+
+    .QuizList {
+        list-style: none;
+        margin-top: 1.5rem;
+
+        .QuizItem {
+            background: var(--card-bg);
+            padding: var(--card-padding);
+            padding-bottom: var(--card-padding-bottom);
+            border-radius: var(--card-border-radius);
+            font-size: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2.2rem;
+
+            &:not(:first-child) {
+                margin-top: 1.5rem;
+            }
+
+            .QuizTitle {
+                font-weight: 600;
+                flex-basis: 40%;
+                text-transform: uppercase;
+            }
+
+            .QuizSummary {
+                flex-basis: 50%;
+                text-align: right;
+            }
+
+            .Actions {
+                margin-top: 1.2rem;
+                flex-basis: 100%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 1.5rem;
+                color: var(--color-black);
+                text-transform: capitalize;
+
+                button {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

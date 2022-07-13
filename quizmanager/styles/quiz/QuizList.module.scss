@@ -1,0 +1,23 @@
+.QuizList {
+    padding: 0;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    list-style: none;
+
+    .Title {
+        display: flex;
+        align-items: center;
+        font-size: 3.2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+
+        &::before {
+            margin-right: 0.7rem;
+            font-size: 5rem;
+            color: #efef2a;
+            content: '\2605';
+        }
+    }
+}

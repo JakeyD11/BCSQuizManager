@@ -1,0 +1,87 @@
+.MainHeader {
+    width: 100%;
+    padding: 1rem 3.5rem;
+    color: var(--color-white);
+    background-color: var(--color-grey-dark-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .Logo {
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.6rem;
+        color: var(--color-white);
+
+        p {
+            text-align: center;
+            line-height: 1.1;
+            display: flex;
+
+            &:first-child {
+                letter-spacing: 8.5px;
+                font-size: 1rem;
+            }
+
+            &:last-child {
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+        }
+
+        span {
+            color: #e3b446;
+            text-shadow: 2px 2px 3px 1px #2d2d2d;
+            // font-size: 2rem;
+            margin: 0 0.3rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    li {
+
+        a,
+        button {
+            transition: all 0.3s ease;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                color: var(--link-hover);
+            }
+        }
+
+        button {
+            color: var(--color-white);
+            background: transparent;
+            border: 1px solid var(--color-white);
+
+            font-weight: 600;
+
+            &:hover {
+                background: inherit;
+                border-color: inherit;
+                color: var(--link-hover);
+            }
+        }
+    }
+
+    .UserInfo {
+        padding: 0.7rem 1.4rem;
+        border-radius: 0.7rem;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: rgba(0, 0, 0, 0.32);
+    }
+}

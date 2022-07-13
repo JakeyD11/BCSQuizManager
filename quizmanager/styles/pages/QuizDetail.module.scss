@@ -1,0 +1,17 @@
+.QuizDetail {
+    width: 100%;
+
+    .Content {
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 2rem 3.5rem;
+    }
+
+    .Actions {
+        font-size: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

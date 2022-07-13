@@ -1,0 +1,122 @@
+.QuestionsOverview {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.4rem 0;
+
+    .Header {
+        font-family: 'Lato';
+        font-size: 3.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.7rem;
+    }
+
+    .Overview {
+        margin-top: 1.5rem;
+
+        .Title {
+            font-family: 'Lato';
+            font-size: 2.6rem;
+            font-weight: 400;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .QuestionList {
+            list-style: none;
+            margin-top: 1.2rem;
+
+            .QuestionItem {
+                margin-top: 1.5rem;
+                padding: var(--card-padding);
+                padding-bottom: var(--card-padding-bottom);
+                background: var(--card-bg);
+                border-radius: var(--card-border-radius);
+
+                .Actions {
+                    margin-top: 1rem;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    padding: 1rem 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 1.5rem;
+
+                    .ShowHide,
+                    .Edit,
+                    .Delete {
+                        padding: 0.7rem 1.4rem;
+                        cursor: pointer;
+                        border: 1px solid currentColor;
+                        border-radius: 0.7rem;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: var(--color-white);
+                            border-color: transparent;
+                        }
+                    }
+
+                    .ShowHide {
+                        &:hover {
+                            color: var(--body-text-dark);
+                            background: var(--color-white);
+                        }
+                    }
+
+                    .Edit {
+                        color: var(--button-primary-light);
+                        &:hover {
+                            background: var(--button-primary-dark);
+                        }
+                    }
+
+                    .Delete {
+                        color: var(--button-danger-light);
+                        &:hover {
+                            background: var(--button-danger-dark);
+                        }
+                    }
+                }
+
+                .Question {
+                    font-family: 'Open Sans';
+                    font-size: 2rem;
+                    text-justify: inter-word;
+                }
+
+                .Answers {
+                    padding: 2rem 0;
+                    list-style: none;
+
+                    .AnswerItem {
+                        color: var(--body-text-dark);
+                        margin-top: 1.5rem;
+                        background: var(--color-grey-light-3);
+                        border-radius: 1rem;
+                        padding: 1.5rem 2.5rem;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        svg {
+                            height: 2.5rem;
+                            display: none;
+                        }
+
+                        &.Correct {
+                            box-shadow: 0 0 7px 2px var(--color-alert-success);
+                            svg {
+                                display: block;
+                                fill: #519c49;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

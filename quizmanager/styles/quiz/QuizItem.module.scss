@@ -1,0 +1,57 @@
+.QuizItem {
+    padding: var(--card-padding);
+    padding-bottom: var(--card-padding-bottom);
+    background: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow-primary);
+    margin-top: 2.2rem;
+
+    .Title {
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .Content {
+        display: flex;
+
+        .Details {
+            flex: 1 1 80%;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            .Category {
+                text-transform: uppercase;
+                color: var(--body-text-light);
+                background: var(--body-bg-dark);
+                padding: 0.3rem 0.7rem;
+                border-radius: 1rem;
+            }
+
+            .Difficulty {
+                font-style: italic;
+            }
+
+            .Summary {
+                &::before {
+                    margin-right: 3px;
+                    content: '\201C';
+                }
+
+                &::after {
+                    margin-left: 3px;
+                    content: '\201D';
+                }
+            }
+        }
+
+        .Actions {
+            margin-top: 1.2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+    }
+}

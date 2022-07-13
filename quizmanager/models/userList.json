@@ -1,0 +1,28 @@
+[
+    {
+        "email": "jake@jake.com",
+        "password":"password",
+        "role": "edit"
+    },    
+    {
+        "email": "admin@webbiskools.com",
+        "password":"admin",
+        "role": "edit"
+    },    
+    {
+        "email": "view@webbiskools.com",
+        "password":"view",
+        "role": "view"
+    },    
+    {
+        "email": "restricted@webbiskools.com",
+        "password":"restricted",
+        "role": "restricted"
+    },
+    {
+        "email": "test@webbiskools.com",
+        "password":"test",
+        "role": "restricted"
+    } 
+    
+]

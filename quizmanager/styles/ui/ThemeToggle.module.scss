@@ -1,0 +1,73 @@
+.ThemeToggle {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+
+    .Icon {
+        position: relative;
+        width: 2.6rem;
+
+        svg {
+            color: var(--color-grey-light-2);
+            position: absolute;
+            height: 2.6rem;
+            transition: all 0.3s linear;
+
+            &:first-child {
+                opacity: 0;
+            }
+        }
+
+        &.Dark {
+            svg {
+                color: var(--color-grey-dark-1);
+
+                &:first-child {
+                    opacity: 1;
+                }
+
+                &:last-child {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .ToggleContainer {
+        cursor: pointer;
+        position: relative;
+        width: 6rem;
+        height: 2.6rem;
+
+        .ToggleBG {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 1.3rem;
+            background: var(--color-grey-light-2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .Toggler {
+            position: absolute;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            top: 0.3rem;
+            left: 0.3rem;
+            background: var(--color-grey-dark-2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.Dark {
+            .ToggleBG {
+                background: var(--color-grey-dark-2);
+            }
+
+            .Toggler {
+                transform: translateX(3.3rem);
+                background: var(--color-grey-dark-4);
+            }
+        }
+    }
+}

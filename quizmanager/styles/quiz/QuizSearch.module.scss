@@ -1,0 +1,106 @@
+.QuizSearch {
+    text-align: center;
+
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    .Title {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .FormGroup {
+        margin-top: 1.2rem;
+
+        .Select {
+            max-width: 30rem;
+            margin: 0 auto;
+            padding: 0.8rem 0;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: 'Lato';
+                font-size: 2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.3rem;
+            }
+
+            .SelectWrapper {
+                background: var(--select-bg);
+                border-radius: var(--select-border-radius);
+                box-shadow: var(--card-shadow-primary);
+                margin-top: 0.7rem;
+                overflow: hidden;
+                position: relative;
+
+                &::before,
+                &::after {
+                    content: '';
+                    pointer-events: none;
+                    position: absolute;
+                }
+
+                &::after {
+                    /*  Custom dropdown arrow */
+                    color: currentColor;
+                    content: '\25BC';
+                    height: 1em;
+                    font-size: 0.625em;
+                    line-height: 1;
+                    right: 1.2em;
+                    top: 50%;
+                    margin-top: -0.5em;
+                }
+
+                &::before {
+                    /*  Custom dropdown arrow cover */
+                    background: rgba(0, 0, 0, 0.15);
+                    width: 2em;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 2;
+                }
+
+                select {
+                    cursor: pointer;
+                    color: currentColor;
+                    background: transparent;
+                    border: none;
+                    margin: 0;
+                    font-size: inherit;
+                    font-family: inherit;
+                    padding: 0.7rem 1.5rem;
+                    text-transform: capitalize;
+                    text-align: center;
+
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-indent: 0.01px;
+                    text-overflow: '';
+
+                    &::-ms-expand {
+                        display: none;
+                    }
+
+                    option {
+                        color: var(--body-text-dark);
+                    }
+                }
+            }
+        }
+    }
+
+    .Actions {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}

@@ -1,0 +1,55 @@
+.HomePage {
+    color: var(--color-white);
+    margin-top: 3rem;
+
+    .Hero {
+        background: #5433ff;
+        /* fallback for old browsers */
+        background: linear-gradient(to bottom left,
+                #50e491,
+                #20bdff,
+                #5433ff);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        padding: 2rem 3.5rem;
+        border-radius: 0 2rem 0 2rem;
+        box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.35);
+
+        display: flex;
+        align-items: center;
+
+        .Header {
+            padding: 2.5rem 4rem;
+            flex-basis: 50%;
+            font-family: 'Lato';
+            font-size: 3.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+            letter-spacing: 0.3rem;
+            border-right: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .CTA {
+            flex-basis: 50%;
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: capitalize;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            p {
+                text-align: center;
+                flex-basis: 100%;
+            }
+
+            a,
+            button {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}

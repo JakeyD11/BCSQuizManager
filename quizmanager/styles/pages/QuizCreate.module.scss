@@ -1,0 +1,59 @@
+.QuizCreate {
+    width: 100%;
+    margin-top: 3rem;
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow-primary);
+    padding: var(--card-padding);
+    padding-bottom: var(--card-padding-bottom);
+    border-radius: var(--card-border-radius-md);
+
+    .Title {
+        font-family: 'Lato';
+        font-size: 3.2rem;
+        font-weight: 300;
+        letter-spacing: 0.3rem;
+    }
+
+    .FormControl {
+        margin-top: 1.5rem;
+
+        .FormGroup {
+            position: relative;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-family: 'Lato';
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            select,
+            input,
+            textarea {
+                margin-top: 1rem;
+                resize: vertical;
+            }
+
+            select {
+                cursor: pointer;
+                text-transform: capitalize;
+
+                &:focus-within {
+                    box-shadow: none;
+                }
+
+                option {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    .Actions {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

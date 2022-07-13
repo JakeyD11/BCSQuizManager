@@ -1,0 +1,53 @@
+.QuestionItem {
+    padding: var(--card-padding);
+    padding-bottom: var(--card-padding-bottom);
+    background: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow-primary);
+    margin-top: 2.2rem;
+
+    .Question {
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .letters {
+        font-weight: 400;
+        flex-basis: 4rem;
+        padding: 0 1rem;
+        text-transform: capitalize;
+
+    }
+
+    .Correct {
+        font-weight: 400;
+        flex-basis: 4rem;
+        padding: 0 1rem;
+        text-transform: capitalize;
+    }
+
+    .AnswerList {
+        margin-top: 1.5rem;
+        list-style: none;
+
+        .Answer {
+            margin-top: 1.5rem;
+            background: var(--card-bg);
+            border-radius: var(--card-border-radius);
+            padding: var(--card-padding);
+            display: flex;
+
+            span {
+                flex-basis: 4rem;
+                font-weight: 400;
+                padding: 0 1rem;
+                text-transform: capitalize;
+            }
+
+
+        }
+
+    }
+}

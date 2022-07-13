@@ -1,0 +1,60 @@
+.Button {
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.7rem 1.8rem;
+    text-align: center;
+    box-shadow: var(--button-shadow-primary);
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: var(--button-shadow-hover);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: translateY(-1px);
+    }
+
+    &.Invert {
+        // color: currentColor;
+        background: transparent;
+        border: 1px solid currentColor;
+        box-shadow: none;
+
+        &:hover {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+    }
+
+    &.Primary {
+        background: var(--button-primary-light);
+
+        &:hover {
+            background: var(--button-primary-dark);
+        }
+    }
+
+    &.Success {
+        background: var(--button-success-light);
+
+        &:hover {
+            background: var(--button-success-dark);
+        }
+    }
+
+    &.Danger {
+        background: var(--button-danger-light);
+
+        &:hover {
+            background: var(--button-danger-dark);
+        }
+    }
+}
